@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>逼真玻璃框效果展示</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                    balabalabalabalabalabalabalabala
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.babel.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max: 10,    //  最大倾斜
+            speed: 400, //  倾斜速度
+            glare: true,    //  是否开启炫光效果
+            "max-glare": 0.5  //  最大眩光的不透明度
+        })
+    </script>
+</body>
+</html>
