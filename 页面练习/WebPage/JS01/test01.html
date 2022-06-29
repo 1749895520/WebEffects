@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test01</title>
+</head>
+<body>
+    <p>
+        <script>
+            document.write("<h1>这是一个标题</h1>");
+        </script>
+		<button type="button" onclick="alert('欢迎！')">点击</button>
+		<p id="demo">
+			点击下面按钮可以改变这段文本的内容
+		</p>
+		<script>
+			flag = 1;
+			function myFunction() {
+				x = document.getElementById("demo");
+				if(this.flag==1) {
+					x.innerHTML = "Hello JavaScript!";
+					x.style.color="#ff0000";
+					this.flag--;
+				} else {
+					x.innerHTML = "点击下面按钮可以改变这段文本的内容";
+					this.flag++;
+					x.style.color="#000000";
+				}
+			}
+		</script>
+		<button type="button" onclick="myFunction()">点击此处</button>
+    </p>
+</body>
+</html>

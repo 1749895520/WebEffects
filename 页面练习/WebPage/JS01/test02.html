@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>test02</title>
+	</head>
+	<body>
+		<p>
+			输入内容，若不是数字则输出提醒
+		</p>
+		<input type="text" id="demo">
+		<script>
+			function isNumber() {
+				x = document.getElementById("demo").value;
+				if(isNaN(x) || x.replace(/(^\s*)|(\s*$)/g,"")=="") {
+					alert("输入内容不是数字");
+				}
+			}
+		</script>
+		<input type="button" onclick="isNumber()" value="点击此处">
+		<p id="demo02">
+			调用外部js文件
+		</p>
+		<input type="button" onclick="test()" value="点击此处">
+		<script src="MyJavascript.js"></script>
+	</body>
+</html>

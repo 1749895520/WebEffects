@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="输入学习的次数" onclick="study(prompt('请输入学习的次数'))">
+		<script type="text/javascript">
+			function study(s) {
+				var times = parseInt(s);
+				while(times-->0) {
+					document.write("正在学习……<br/>");
+				}
+			}
+		</script>
+	</body>
+</html>

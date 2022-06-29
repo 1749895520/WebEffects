@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>四则运算</title>
+	</head>
+	<body>
+		<input type="button" value="输入运算" onclick="ope()" />
+		<script type="text/javascript">
+			function ope() {
+				var ope1 = prompt("请输入第一个数:");
+				var oper = prompt("请输入运算符号:");
+				var ope2 = prompt("请输入第二个数:");
+				var ans;
+				var num1 = parseInt(ope1);
+				var num2 = parseInt(ope2);
+				switch(oper) {
+					case "+":
+						ans = num1 + num2;
+						break;
+					case "-":
+						ans = num1 - num2;
+						break;
+					case "*":
+						ans = num1 * num2;
+						break;
+					case "/":
+						ans = num1 / num2;
+						break;
+					case "%":
+						ans = num1 % num2;
+						break;
+					default:
+						alert("输入运算符错误！");
+						break;
+				}
+				alert("运算的结果为"+num1+oper+num2+"="+ans);
+			}
+		</script>
+	</body>
+</html>

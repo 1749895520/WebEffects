@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片切换</title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var index = 0;
+			function changeImg() {
+				var getImg = document.getElementById("img1");
+				var imgIndex = index%3+1;
+				getImg.src = "images/0"+imgIndex+".jpeg";
+				index++;
+			}
+			function init() {
+				setInterval("changeImg()",1000);
+			}
+		</script>
+	</head>
+	<body onload="init()">
+		<div>
+			<img src="images/01.jpeg" width="300px" id="img1">
+		</div>
+	</body>
+</html>
